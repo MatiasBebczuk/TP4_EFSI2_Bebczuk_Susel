@@ -7,7 +7,7 @@ function Listado(){
       <h2>Listado de párrafos</h2>
       <ul>
         {[...Array(3)].map((_, index) => (
-          <p>{index}{Cita}</p> 
+          <p>{Cita}</p> 
         ))}
       </ul>
     </div>
