@@ -1,0 +1,56 @@
+.form {
+  border: 10px solid #ff7d23;
+  width: 43%;
+  padding: 20px;
+  float: left;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: sans-serif;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.form input[type="text"],
+.form input[type="mail"],
+.form input[type="password"] {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form input[type="submit"] {
+  width: fit-content;
+  padding: 10px 20px;
+  background-color: #ff7d23;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #e06714;
+}
+
+
+.Listado {
+  border: 10px solid #b6744f;
+  width: 50%;
+  padding: 20px;
+  float: right;
+}
+
+.cita {
+  border: 10px solid #6F91BD;
+  padding: 20px;
+  float: right;
+  clear: right;
+}
