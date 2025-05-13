@@ -7,6 +7,7 @@ function Citas({cita}){
         <p className="SubName">SubName: {cita.SubName}</p> 
         <p className="Email">Email: {cita.Email}</p> 
         <p className="Fecha">Fecha: {cita.Fecha}</p> 
+        <p className="Hora">Hora: {cita.Hora}</p> 
         <p className="Password">Password: {cita.Password}</p> 
       </div>
     ); 

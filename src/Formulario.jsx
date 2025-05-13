@@ -7,6 +7,7 @@ function Formulario({citas, setCitas}){
             SubName: document.querySelector("#SubName").value,
             Email: document.querySelector("#Email").value,
             Fecha: document.querySelector("#Fecha").value,
+            Hora: document.querySelector("#Hora").value,
             Password: document.querySelector("#Password").value,
         };
 
@@ -28,7 +29,9 @@ function Formulario({citas, setCitas}){
             <label>Email:</label>
             <input id="Email" type="mail"/>
             <label>Fecha:</label>
-            <input id="Fecha" type="text"/>
+            <input id="Fecha" type="date"/>
+            <label>Hora:</label>
+            <input id="Hora" type="time"/>
             <label>Password:</label>
             <input id="Password" type="password"/>
             <input type="submit" value="Submit" onClick={añadirCita}/>
