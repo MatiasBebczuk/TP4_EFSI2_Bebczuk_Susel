@@ -1,56 +1,30 @@
-.form {
-  border: 10px solid #ff7d23;
-  width: 43%;
-  padding: 20px;
-  float: left;
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
   font-family: sans-serif;
-}
+  background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+  min-height: 100%;
+  padding-bottom: 5rem;
 
-.form label {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  font-weight: bold;
+  justify-content: center;
+  flex-direction: row;
 }
 
-.form input[type="text"],
-.form input[type="mail"],
-.form input[type="password"] {
-  padding: 8px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.form input[type="submit"] {
-  width: fit-content;
-  padding: 10px 20px;
-  background-color: #ff7d23;
+h1, h2 {
   color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 1px;
+  margin: 0;
 }
 
-.form input[type="submit"]:hover {
-  background-color: #e06714;
-}
-
-
-.Listado {
-  border: 10px solid #b6744f;
-  width: 50%;
-  padding: 20px;
-  float: right;
-}
-
-.cita {
-  border: 10px solid #6F91BD;
-  padding: 20px;
-  float: right;
-  clear: right;
-}
+h1{font-size: 4rem;}
+h2{font-size: 3rem;}

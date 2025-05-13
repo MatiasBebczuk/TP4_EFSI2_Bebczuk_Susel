@@ -3,11 +3,16 @@ import './Citas.css'
 function Citas({cita}){
     return(
       <div className="cita">
-        <p className="NombreDueño">Nombre del dueño: {cita.NombreDueño}</p> 
-        <p className="NombreMascota">SubName: {cita.NombreMascota}</p> 
-        <p className="Fecha">Fecha: {cita.Fecha}</p> 
-        <p className="Hora">Hora: {cita.Hora}</p> 
-        <p className="Sintomas">Sintomas: {cita.Sintomas}</p> 
+        <span>Nombre del dueño: </span>
+        <p className="NombreDueño">{cita.NombreDueño}</p><br/>
+        <span>Nombre de la mascota: </span>
+        <p className="NombreMascota">{cita.NombreMascota}</p><br/>
+        <span>Fecha: </span>
+        <p className="Fecha">{cita.Fecha}</p><br/>
+        <span>Hora: </span>
+        <p className="Hora">{cita.Hora}</p><br/>
+        <span>Síntomas: </span>
+        <p className="Sintomas">{cita.Sintomas}</p> 
       </div>
     ); 
 

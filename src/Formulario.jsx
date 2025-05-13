@@ -19,20 +19,22 @@ function Formulario({citas, setCitas}){
         
     };
 
-    return(
+    return(<>
         <div className="form">
+    <h2>Crear mi cita</h2>
             <label>Nombre del dueño:</label>
-            <input id="NombreDueño" type="text"/>
+            <input id="NombreDueño" type="text" placeholder="Nombre dueño de la mascota"/>
             <label>Nombre de la mascota:</label>
-            <input id="NombreMascota" type="text"/>
+            <input id="NombreMascota" type="text" placeholder="Nombre mascota"/>
             <label>Fecha:</label>
             <input id="Fecha" type="date"/>
             <label>Hora:</label>
             <input id="Hora" type="time"/>
             <label>Sintomas:</label>
             <textarea id="Sintomas"></textarea>
-            <input type="submit" value="Submit" onClick={añadirCita}/>
+            <input type="submit" value="AGREGAR CITA" onClick={añadirCita} />
         </div>
+    </>
     ); 
 
 }
