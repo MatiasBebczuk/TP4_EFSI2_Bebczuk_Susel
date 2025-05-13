@@ -3,12 +3,11 @@ import './Formulario.css';
 function Formulario({citas, setCitas}){
     const añadirCita = () => {
         let nuevo = {
-            Name: document.querySelector("#Name").value,
-            SubName: document.querySelector("#SubName").value,
-            Email: document.querySelector("#Email").value,
+            NombreDueño: document.querySelector("#NombreDueño").value,
+            NombreMascota: document.querySelector("#NombreMascota").value,
             Fecha: document.querySelector("#Fecha").value,
             Hora: document.querySelector("#Hora").value,
-            Password: document.querySelector("#Password").value,
+            Sintomas: document.querySelector("#Sintomas").value,
         };
 
         for(const attr in nuevo){
@@ -22,18 +21,16 @@ function Formulario({citas, setCitas}){
 
     return(
         <div className="form">
-            <label>Name:</label>
-            <input id="Name" type="text"/>
-            <label>SubName:</label>
-            <input id="SubName" type="text"/>
-            <label>Email:</label>
-            <input id="Email" type="mail"/>
+            <label>Nombre del dueño:</label>
+            <input id="NombreDueño" type="text"/>
+            <label>Nombre de la mascota:</label>
+            <input id="NombreMascota" type="text"/>
             <label>Fecha:</label>
             <input id="Fecha" type="date"/>
             <label>Hora:</label>
             <input id="Hora" type="time"/>
-            <label>Password:</label>
-            <input id="Password" type="password"/>
+            <label>Sintomas:</label>
+            <textarea id="Sintomas"></textarea>
             <input type="submit" value="Submit" onClick={añadirCita}/>
         </div>
     ); 
