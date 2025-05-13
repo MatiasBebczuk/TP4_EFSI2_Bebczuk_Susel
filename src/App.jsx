@@ -7,8 +7,8 @@ function App() {
 
   return (
     <>
-      <Formulario/>
-      <Listado Citas = {citas} setCitas = {setCitas}/>
+      <Formulario citas = {citas} setCitas = {setCitas}/>
+      <Listado citas = {citas}/>
     </>
   )
 }

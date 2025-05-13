@@ -1,15 +1,11 @@
 import Citas from "./Citas.jsx"
 import './Listado.css'
 
-function Listado(){
-    const Cita = Citas();
+function Listado({citas}){
     return(
         <div className="Listado">
-      <h2>Listado de párrafos</h2>
       <ul>
-        {[...Array(3)].map((_, index) => (
-          <li key={index}>{Cita}</li> 
-        ))}
+        {citas.map((cita, i) => <Citas key={i} cita={cita}></Citas>)}
       </ul>
     </div>
     ); 

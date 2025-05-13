@@ -1,20 +1,38 @@
 import './Formulario.css';
 
-function Formulario(){
+function Formulario({citas, setCitas}){
+    const añadirCita = () => {
+        let nuevo = {
+            Name: document.querySelector("#Name").value,
+            SubName: document.querySelector("#SubName").value,
+            Email: document.querySelector("#Email").value,
+            Fecha: document.querySelector("#Fecha").value,
+            Password: document.querySelector("#Password").value,
+        };
+
+        for(const attr in nuevo){
+            if(!nuevo[attr]) return;
+        }
+
+        let aux = [...citas, nuevo];
+        setCitas(aux);
+        
+    };
+
     return(
-        <form className="form">
-                <label>
-                        Name:
-                        <input type="text" name="name" />
-                        SubName:
-                        <input type="text" name="subname" />
-                        Email:
-                        <input type="mail" name="email" />
-                        Password:
-                        <input type="password" name="password" />
-                </label>
-            <input type="submit" value="Submit" />
-        </form>
+        <div className="form">
+            <label>Name:</label>
+            <input id="Name" type="text"/>
+            <label>SubName:</label>
+            <input id="SubName" type="text"/>
+            <label>Email:</label>
+            <input id="Email" type="mail"/>
+            <label>Fecha:</label>
+            <input id="Fecha" type="text"/>
+            <label>Password:</label>
+            <input id="Password" type="password"/>
+            <input type="submit" value="Submit" onClick={añadirCita}/>
+        </div>
     ); 
 
 }
